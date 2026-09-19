@@ -15,3 +15,10 @@ def find_UPC(first_11_digits):
             odd_sum += digit
         else:
             even_sum += digit
+
+    total = (odd_sum * 3) + even_sum
+    remainder = total % 10
+
+    if remainder == 0:
+        return 0
+    return 10 - remainder
