@@ -30,4 +30,9 @@ check_digit = upc[11]
 
 print()
 print("The first 11 digits are '" + first_11 + "'.")
-print("The provided check digit is '" + check_digit + "'.")
+print("The given check digit is '" + check_digit + "'.")
+
+print()
+print("Calculating digit")
+check_digit = find_UPC(first_11_digits)
+print("The check digit is " + str(check_digit) + ".")
