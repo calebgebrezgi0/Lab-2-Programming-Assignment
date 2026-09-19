@@ -24,3 +24,10 @@ def find_UPC(first_11_digits):
     return 10 - remainder
 
 upc = input("Enter a 12-digit UPC: ")
+
+first_11_digits = upc[0:11]
+check_digit = upc[11]
+
+print()
+print("The first 11 digits are '" + first_11 + "'.")
+print("The provided check digit is '" + check_digit + "'.")
