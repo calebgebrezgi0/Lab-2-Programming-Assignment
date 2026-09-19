@@ -22,3 +22,5 @@ def find_UPC(first_11_digits):
     if remainder == 0:
         return 0
     return 10 - remainder
+
+upc = input("Enter a 12-digit UPC: ")
