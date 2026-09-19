@@ -29,7 +29,7 @@ first_11_digits = upc[0:11]
 given_check_digit = upc[11]
 
 print()
-print("The first 11 digits are '" + first_11 + "'.")
+print("The first 11 digits are '" + first_11_digits + "'.")
 print("The given check digit is '" + given_check_digit + "'.")
 
 print()
