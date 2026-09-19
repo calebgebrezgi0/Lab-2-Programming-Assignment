@@ -26,13 +26,18 @@ def find_UPC(first_11_digits):
 upc = input("Enter a 12-digit UPC: ")
 
 first_11_digits = upc[0:11]
-check_digit = upc[11]
+given_check_digit = upc[11]
 
 print()
 print("The first 11 digits are '" + first_11 + "'.")
-print("The given check digit is '" + check_digit + "'.")
+print("The given check digit is '" + given_check_digit + "'.")
 
 print()
 print("Calculating digit")
-check_digit = find_UPC(first_11_digits)
-print("The check digit is " + str(check_digit) + ".")
+check_digit_output = find_UPC(first_11_digits)
+print("The check digit is " + str(check_digit_output) + ".")
+
+if check_digit_output == int(given_check_digit):
+    print("This is a VALID UPC.")
+else:
+    print("This is an INVALID UPC.")
