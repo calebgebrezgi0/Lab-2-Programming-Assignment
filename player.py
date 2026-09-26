@@ -12,7 +12,7 @@ class Player:
         self.__wallet = 20
         self.__coin = Coin()
 
-        def toss_coin(self):
+    def toss_coin(self):
         self.__coin.toss()
 
     def get_coin_side(self):

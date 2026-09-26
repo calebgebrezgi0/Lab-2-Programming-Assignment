@@ -13,3 +13,17 @@ def main():
     print("--- Coin Match Game ---")
     print(player1.get_name(), "has", player1.get_wallet(), "coins.")
     print(player2.get_name(), "has", player2.get_wallet(), "coins.")
+
+    play_again = input("Do you want to toss the coins? (y/n): ")
+    game_over = False
+
+    while play_again.lower() == "y" and game_over == False:
+        print("\nTossing...")
+        player1.toss_coin()
+        player2.toss_coin()
+
+        side1 = player1.get_coin_side()
+        side2 = player2.get_coin_side()
+
+        print(player1.get_name(), "tossed", side1)
+        print(player2.get_name(), "tossed", side2)

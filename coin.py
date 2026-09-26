@@ -10,7 +10,7 @@ class Coin:
     def __init__(self):
         self.__sideup = "Heads"
 
-        def toss(self):
+    def toss(self):
         result = random.randint(0, 1)
         if result == 0:
             self.__sideup = "Heads"
