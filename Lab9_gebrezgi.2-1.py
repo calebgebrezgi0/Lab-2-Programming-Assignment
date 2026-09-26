@@ -41,3 +41,17 @@ def main():
         print(player2.get_name(), "has", player2.get_wallet(), "coins.")
 
         play_again = input("Do you want to toss the coins? (y/n): ")
+
+    print("\n--- Final Score ---")
+    print(player1.get_name(), ":", player1.get_wallet())
+    print(player2.get_name(), ":", player2.get_wallet())
+
+    if player1.get_wallet() > player2.get_wallet():
+        print(player1.get_name(), "wins!")
+    elif player2.get_wallet() > player1.get_wallet():
+        print(player2.get_name(), "wins!")
+    else:
+        print("It's a draw!")
+
+if __name__ == "__main__":
+    main()
